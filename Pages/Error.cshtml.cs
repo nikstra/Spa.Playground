@@ -12,7 +12,9 @@ namespace Spa.Playground.Pages
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public class ErrorModel : PageModel
     {
+#pragma warning disable IDE0052 // S4487
         private readonly ILogger<ErrorModel> _logger;
+#pragma warning restore IDE0052 // S4487
 
         public ErrorModel(ILogger<ErrorModel> logger)
         {
