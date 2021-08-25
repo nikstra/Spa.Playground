@@ -1,4 +1,4 @@
-namespace Spa.Playground.Models
+namespace Spa.Playground.Web.Models
 {
     public enum PlayerPositions
     {

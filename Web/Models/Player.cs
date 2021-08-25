@@ -1,6 +1,6 @@
 using System;
 
-namespace Spa.Playground.Models
+namespace Spa.Playground.Web.Models
 {
     public class Player
     {

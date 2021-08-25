@@ -1,6 +1,6 @@
 using System;
 
-namespace Spa.Playground
+namespace Spa.Playground.Web
 {
     public class WeatherForecast
     {

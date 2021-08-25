@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Spa.Playground.Controllers
+namespace Spa.Playground.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

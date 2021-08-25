@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Spa.Playground
+namespace Spa.Playground.Web
 {
     public class Program
     {

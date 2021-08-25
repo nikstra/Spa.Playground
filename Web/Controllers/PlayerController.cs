@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Spa.Playground.Models;
+using Spa.Playground.Web.Models;
 
-namespace Spa.Playground.Controllers
+namespace Spa.Playground.Web.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
