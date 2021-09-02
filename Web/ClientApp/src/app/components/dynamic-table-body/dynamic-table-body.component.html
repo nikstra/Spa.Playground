@@ -1,0 +1,19 @@
+<tr *ngFor="let row of tableData?.content">
+    <td *ngFor="let cellData of row; let i = index" [ngSwitch]="tableData?.meta.columns[i].type">
+        <ng-container *ngSwitchCase="'date'">{{ cellData | date: 'shortDate' }}</ng-container>
+        <ng-container *ngSwitchCase="'time'">{{ cellData | date: 'shortTime' }}</ng-container>
+        <ng-container *ngSwitchCase="'datetime'">{{ cellData | date: 'short' }}</ng-container>
+        <ng-container *ngSwitchCase="'number'">{{ cellData | number }}</ng-container>
+        <ng-container *ngSwitchCase="'bool'">{{ cellData ? 'Yes' : 'No' }}</ng-container>
+        <ng-container *ngSwitchCase="'imgurl'"><img
+            [src]="cellData.src"
+            [alt]="cellData.title"
+            [title]="cellData.title"
+        ></ng-container>
+        <ng-container *ngSwitchCase="'url'"><a
+            [href]="cellData.url"
+            target="_blank">{{ cellData.text }}</a
+        ></ng-container>
+        <ng-container *ngSwitchDefault>{{ cellData }}</ng-container>
+    </td>
+</tr>

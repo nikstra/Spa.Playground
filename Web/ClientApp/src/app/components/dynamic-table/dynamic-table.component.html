@@ -1,0 +1,18 @@
+<!-- <table class="table table-striped"> -->
+<!-- https://blog.novanet.no/angular-pitfall-multiple-http-requests-with-rxjs-and-observable-async/ -->
+<table *ngIf="tableData$ | async as tableData" [ngClass]="cssClasses.get('table').join(' ')">
+    <!--
+        Use an attribute selector for thead/tbody (may be useful for svg tags also).
+        https://stackoverflow.com/questions/45595659/html-table-in-conflict-with-angular-component-header-and-component-body
+        https://stackoverflow.com/questions/34280475/remove-the-host-html-element-selectors-created-by-angular-component
+
+        Content projection
+        https://www.digitalocean.com/community/tutorials/angular-content-projection-angular
+    -->
+    <thead app-dynamic-table-head
+        [columnHeaders]="tableData?.meta.columns"
+    ></thead>
+    <tbody app-dynamic-table-body
+        [tableData]="tableData"
+    ></tbody>
+</table>

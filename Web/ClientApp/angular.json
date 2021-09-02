@@ -7,6 +7,12 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "sv-SE",
+        "locales": {
+          "en-US": "src/assets/i18n/messages.en-US.xlf"
+        }
+      },
       "prefix": "app",
       "schematics": {},
       "architect": {
