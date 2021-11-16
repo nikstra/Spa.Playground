@@ -26,6 +26,16 @@ namespace Spa.Playground.Web
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder => builder
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowCredentials()
+                );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +52,7 @@ namespace Spa.Playground.Web
                 app.UseHsts();
             }
 
+            app.UseCors("CorsPolicy");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())
@@ -67,7 +78,8 @@ namespace Spa.Playground.Web
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                    // spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });
         }
