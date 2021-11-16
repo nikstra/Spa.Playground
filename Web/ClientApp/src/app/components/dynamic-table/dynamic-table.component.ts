@@ -56,5 +56,5 @@ export interface IColumnHead {
 
 export enum Sort {
   Ascending = "ascending",
-  Descending = "descenting"
+  Descending = "descending"
 }
