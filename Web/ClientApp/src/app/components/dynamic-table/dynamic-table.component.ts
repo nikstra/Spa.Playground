@@ -12,7 +12,7 @@ import { DynamicTableHeadComponent } from '../dynamic-table-head/dynamic-table-h
 })
 export class DynamicTableComponent implements OnInit {
   cssClasses: Map<string, string[]> = new Map([
-    [ "table", ["table", "table-striped"]]
+    [ 'table', ['table', 'table-striped']]
   ]);
 
   @ViewChild(DynamicTableHeadComponent) tableHead: DynamicTableHeadComponent;
@@ -24,9 +24,9 @@ export class DynamicTableComponent implements OnInit {
   constructor(private dynamicDataService: DynamicDataService) {
     this.tableData$.subscribe(x => console.log(x));
   }
-  
+
   ngOnInit(): void {
-    
+
     this.tableData$ = this.getData(0, 50);
   }
 
@@ -55,6 +55,6 @@ export interface IColumnHead {
 }
 
 export enum Sort {
-  Ascending = "ascending",
-  Descending = "descending"
+  Ascending = 'ascending',
+  Descending = 'descending'
 }

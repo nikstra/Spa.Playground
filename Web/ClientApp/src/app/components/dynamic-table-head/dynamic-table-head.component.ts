@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./dynamic-table-head.component.css']
 })
 export class DynamicTableHeadComponent implements OnInit {
-  @Input() columnHeaders: any[]
+  @Input() columnHeaders: any[];
 
   constructor() {}
 
