@@ -2,8 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { defaultIfEmpty } from 'rxjs/operators';
 import { DynamicDataService } from 'src/app/services/dynamic-data.service';
-import { DynamicTableBodyComponent } from '../dynamic-table-body/dynamic-table-body.component';
-import { DynamicTableHeadComponent } from '../dynamic-table-head/dynamic-table-head.component';
+import { DynamicTableBodyComponent } from './dynamic-table-body/dynamic-table-body.component';
+import { DynamicTableHeadComponent } from './dynamic-table-head/dynamic-table-head.component';
 
 @Component({
   selector: 'app-dynamic-table',

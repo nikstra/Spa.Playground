@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ITableData } from '../dynamic-table/dynamic-table.component';
+import { ITableData } from '../dynamic-table.component';
 
 @Component({
   /* eslint-disable-next-line */

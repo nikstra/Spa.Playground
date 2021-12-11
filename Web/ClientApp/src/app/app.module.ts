@@ -11,8 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { PlayerComponent } from './player/player.component';
 import { DynamicTableComponent } from './components/dynamic-table/dynamic-table.component';
-import { DynamicTableHeadComponent } from './components/dynamic-table-head/dynamic-table-head.component';
-import { DynamicTableBodyComponent } from './components/dynamic-table-body/dynamic-table-body.component';
+import { DynamicTableHeadComponent } from './components/dynamic-table/dynamic-table-head/dynamic-table-head.component';
+import { DynamicTableBodyComponent } from './components/dynamic-table/dynamic-table-body/dynamic-table-body.component';
 
 @NgModule({
   declarations: [
