@@ -38,7 +38,7 @@ export class DynamicTableComponent implements OnInit {
 
 export interface ITableData {
   meta: IMeta;
-  content: Object[][];
+  content: any[][];
 }
 
 export interface IMeta {
