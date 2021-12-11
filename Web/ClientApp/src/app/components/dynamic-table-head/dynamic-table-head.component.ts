@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  /* tslint:disable-next-line */
+  /* eslint-disable-next-line */
   selector: '[app-dynamic-table-head]',
   templateUrl: './dynamic-table-head.component.html',
   styleUrls: ['./dynamic-table-head.component.css']
